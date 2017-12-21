@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>KANBAN - Muuri Demo</title>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic">
+        <link rel="stylesheet" href="styles/demo-kanban.css?v=5">
+    </head>
+
+    <body>
+        <!--
+        <header>
+            <h1>Header</h1>
+        </header>
+        -->
+
+        <section class="kanban-demo">
+        
+            <div class="board">
+
+                <div class="board-column fixed">
+                    <div class="board-column-header">FIXED at upper-left</div>
+                    <div class="board-column-content">
+                        <div class="board-item"><div class="board-item-content"><span>Добрый</span> день!</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Здравия</span> желаю!</div></div>
+                    </div>
+                </div>
+
+                <div class="board-column todo">
+                    <div class="board-column-header">To do</div>
+                    <div class="board-column-content">
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>1</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>2</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>3</div></div>
+                    </div>
+                </div>
+
+                <div class="board-column working">
+                    <div class="board-column-header">Working</div>
+                    <div class="board-column-content">
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>4</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>5</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>6</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>7</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>8</div></div>
+                    </div>
+                </div>
+
+                <div class="board-column done">
+                    <div class="board-column-header">Done</div>
+                    <div class="board-column-content">
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>9</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>10</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>11</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>12</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>13</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>14</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Item #</span>15</div></div>
+                    </div>
+                </div>
+
+                <div class="board-column">
+                    <div class="board-column-header">ПРЕВЕДЪ!</div>
+                    <div class="board-column-content">
+                        <div class="board-item"><div class="board-item-content"><span>Добрый</span> день!</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Здравия</span> желаю!</div></div>
+                    </div>
+                </div>
+
+                <div class="board-column">
+                    <div class="board-column-header">My First Chunk</div>
+                    <div class="board-column-content">
+                        <div class="board-item">
+                            <div class="board-item-content">
+                                <img src="https://en.wikipedia.org/static/favicon/wikipedia.ico" class="icon ico left anim-ctrl hide">
+                                <a href="https://en.wikipedia.org" style="cursor: pointer;">Wikipedia</a>
+                            </div>
+                        </div>
+                        <div class="board-item">
+                            <div class="board-item-content">
+                                <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico" class="icon ico left anim-ctrl hide">
+                                <a href="https://www.google.com" class="hover anim-ctrl" style="cursor: pointer;">Google</a>
+                            </div>
+                        </div>
+                        <div class="board-item">
+                            <div class="board-item-content">
+                                <img src="http://bestreviews.com/favicon.ico" class="icon ico left anim-ctrl hide">
+                                <a href="http://bestreviews.com" class="hover anim-ctrl" style="cursor: pointer;">BestReviews</a>
+                            </div>
+                        </div>
+                        <div class="board-item">
+                            <div class="board-item-content">
+                                <img src="https://www.youtube.com/yts/img/ringo/img/favicon-vfl8qSV2F.ico" class="icon ico left anim-ctrl hide">
+                                <a href="https://www.youtube.com" class="hover anim-ctrl" style="cursor: pointer;">YouTube</a>
+                            </div>
+                        </div>
+                        <div class="board-item">
+                            <div class="board-item-content">
+                                <img src="https://s.pinimg.com/webapp/style/images/favicon-9f8f9adf.png" class="icon ico left anim-ctrl hide">
+                                <a href="https://www.pinterest.com" class="hover anim-ctrl" style="cursor: pointer;">Pinterest</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="board-column wide">
+                    <div class="board-column-header">First Wide Chunk</div>
+                    <div class="board-column-content">
+                        <div class="board-item">
+                            <div class="board-item-content">
+                                <span>Long</span> text
+                            </div>
+                        </div>
+                        <div class="board-item">
+                            <div class="board-item-content">
+                                <span>Even more longer text:</span> Curabitur pulvinar dolor lectus, quis porta turpis ullamcorper nec. Quisque eget varius turpis, quis iaculis nibh. Ut interdum ligula id metus hendrerit cursus. Integer eu leo felis. Aenean commodo ultrices nunc, sit amet blandit elit gravida in. Sed est ligula, ornare ac nisi adipiscing, iaculis facilisis tellus. Nullam vel facilisis libero. Duis semper lobortis elit, vitae dictum erat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="board-column wide">
+                    <div class="board-column-header">Second Wide Chunk</div>
+                    <div class="board-column-content">
+                        <div class="board-item">
+                            <div class="board-item-content">
+                                Pellentesque sagittis vel erat ac laoreet. Phasellus ac aliquet enim, eu aliquet sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar porta leo, eu ultricies nunc sollicitudin vitae. Curabitur pulvinar dolor lectus, quis porta turpis ullamcorper nec. Quisque eget varius turpis, quis iaculis nibh.
+                            </div>
+                        </div>
+                        <div class="board-item">
+                            <div class="board-item-content">
+                                <span>Even more longer text:</span> Curabitur pulvinar dolor lectus...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="board-column fixed">
+                    <div class="board-column-header">FIXED at bottom-right</div>
+                    <div class="board-column-content">
+                        <div class="board-item"><div class="board-item-content"><span>Добрый</span> день!</div></div>
+                        <div class="board-item"><div class="board-item-content"><span>Здравия</span> желаю!</div></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+        -->
+
+        <!-- <script src="scripts/vendor/web-animations-2.3.1.min.js"></script> -->
+        <script src="scripts/vendor/hammer-2.0.8.min.js"></script>
+        <script src="scripts/vendor/muuri-0.5.3.js"></script>
+        <script src="scripts/demo-kanban.js?v=5"></script>
+    </body>
+</html>
