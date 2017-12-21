@@ -5,25 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const docElem       = document.documentElement,
           section       = document.querySelector(".demo-section"),
           board         = section.querySelector(".board"),
-          //footer        = document.querySelector("footer"),
-          //opener        = footer.querySelector(".footer-opener"),
           item_containers = Array.prototype.slice.call(section.querySelectorAll(".board-column-content")),
           headers       = Array.prototype.slice.call(section.querySelectorAll(".board-column-header"));
     
     let columnGrids = [],
         dragCounter = 0,
         boardGrid;
-
-    // opener.addEventListener("click", function() {
-    //     if(footer.classList.contains("expanded")) {
-    //         footer.style.maxHeight = "14px";
-    //         footer.classList.remove("expanded");
-    //     } else {
-    //         footer.style.maxHeight = "264px";
-    //         footer.classList.add("expanded");
-    //     }
-    // });
-
 
     for(let i = 0, l = headers.length; i < l; i++) {
         let header = headers[i];

@@ -81,7 +81,6 @@ footer:hover {
 }
 .footer-opener {
     background-color: white;
-    /*border: 1px solid white;*/
     border: none;
     border-radius: 50%;
     color: black;
@@ -103,7 +102,6 @@ footer:hover {
 /* Sections */
 
 section {
-    /*margin: 60px auto;*/
     margin: 0;
     padding-top: 0;
     max-width: 100%;
@@ -115,15 +113,16 @@ section {
 /* Board */
 
 .board {
-    border: 1px solid black;
+    border: none;
     position: relative;
+    /*margin-left: 4%;*/
 }
 .board-column {
     position: absolute;
     left: 0;
     right: 0;
     width: 14%;
-    margin: 1% 0 1% 2%;
+    margin: 1% 1% 1% 1.5%;
     background-color: #f0f0f0;
     border-radius: 3px;
     z-index: 1;
@@ -179,7 +178,6 @@ section {
     -webkit-box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.2);
     box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.2);
 }
-/*
 .board-item-content img {
     display: block;
     width: 16px;
@@ -198,7 +196,6 @@ section {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-*/
 
 /*
 @media (max-width: 600px) {
@@ -270,7 +267,7 @@ ul.opened-tabs-list li a:visited {
 
 
 
-/*
+
 .spr {
     background: url(../img/ico.png) no-repeat left top;
     border: none;
@@ -293,9 +290,7 @@ ul.opened-tabs-list li a:visited {
 .row {background-position-y: -176px;}
 .menu-grey {background-position-y: -192px;}
 .menu {background-position-y: -208px;}
-*/
 
-/*
 .nowr {
     color: #444444;
     display: block;
@@ -306,7 +301,7 @@ ul.opened-tabs-list li a:visited {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-*/
+
 
 
 
