@@ -45,11 +45,6 @@ body {
     max-height: 100%;
 }
 
-header {
-    flex: none;
-    height: 40px;
-}
-
 .scrollable {
     display: flex;
     flex: auto;
@@ -57,6 +52,70 @@ header {
     background-color: silver;
     color: black;
 }
+
+
+/************************************************************
+                        Header
+*************************************************************/
+
+header {
+    flex: none;
+    height: auto;
+    min-height: 40px;
+    background-color: #333333;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+header li {
+    float: right;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to black on hover */
+header li a:hover {
+    background-color: #111111;
+}
+header li a.active {
+    background-color: #4CAF50;
+}
+
+div.header-fixed-container {
+    border: 1px solid white;
+    float: left;
+    height: 40px;
+}
+div.header-fixed-container div {
+    border-left: 1px solid yellow;
+    border-right: 1px solid lime;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    line-height: 38px;
+    margin-right: 20px;
+    padding: 0 10px;
+    /*
+    padding-right: 10px;
+    padding-left: 10px;
+    */
+}
+
+
+/************************************************************
+                        Footer
+*************************************************************/
 
 footer {
     align-self: flex-end;
