@@ -26,23 +26,28 @@
                     </div>
                 </div>
 
-                <ul>
-                    <li class="active" title="Primary">
+                <!-- 
+                    lets limit page titles to 16 total characters !!!
+                    (the Bundle titles must be as wide as it possible,
+                    when the length became too wide - lets place the "..." sign)
+                -->
+                <ul id="menu_sections">
+                    <li id="ms_0" class="active" title="Primary">
                         <a href="javascript:void(0)">Primary</a>
                     </li>
-                    <li title="Web">
+                    <li id="ms_1" title="Web">
                         <a href="javascript:void(0)">Web</a>
                     </li>
-                    <li title="Not Too Long Title">
+                    <li id="ms_2" title="Not Too Long Title">
                         <a href="javascript:void(0)">Not Too Long Title</a>
                     </li>
-                    <li title="Entertainment">
+                    <li id="ms_3" title="Entertainment">
                         <a href="javascript:void(0)">Entertainment</a>
                     </li>
-                    <li title="Stats">
+                    <li id="ms_4" title="Stats">
                         <a href="javascript:void(0)">Stats</a>
                     </li>
-                    <li title="Misc">
+                    <li id="ms_5" title="Misc">
                         <a href="javascript:void(0)">Misc</a>
                     </li>
                     <!--
@@ -77,10 +82,37 @@
                 </ul>
             </header>
 
-            <div class="scrollable">
+            <div class="content-field">
 
-                <section class="demo-section">
-                
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                <!-- <section id="s_1" class="board-section"> -->
+                <section id="s_1">
+                    <h1>section WEB</h1>
+                </section>
+
+                <!-- <section id="s_2" class="board-section"> -->
+                <section id="s_2">
+                    <h1>section NOT TOO LONG TITLE</h1>
+                </section>
+
+                <!-- <section id="s_3" class="board-section"> -->
+                <section id="s_3">
+                    <h1>section ENTARTAINMENT</h1>
+                </section>
+
+                <!-- <section id="s_4" class="board-section"> -->
+                <section id="s_4">
+                    <h1>section STATS</h1>
+                </section>
+
+                <!-- <section id="s_5" class="board-section"> -->
+                <section id="s_5">
+                    <h1>section MISC</h1>
+                </section>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                <section id="s_0" class="board-section active">
+
                     <div class="board">
 
                         <div class="board-column">
