@@ -64,7 +64,7 @@ body {
 
 header {
     flex: none;
-    min-height: 40px;
+    min-height: 46px;
     background-color: #333333;
     width: 100%;
     padding: 0 2%;
@@ -176,7 +176,8 @@ header ul li a {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    line-height: 42px;
+    line-height: 32px;
+    padding-top: 8px;
     white-space: nowrap;
 }
 header ul li.active a {
