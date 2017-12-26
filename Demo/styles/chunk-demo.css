@@ -91,31 +91,10 @@ div.header-fixed-container {
 
 /****************************** DropDown MENU *******************************/
 
-/*
-#ddmenu {
-    background-color: transparent;
-    border: none;
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
-    min-height: 40px;
-    vertical-align: middle;
-    text-align: center;
-    margin-top: 4px;
-}
-#ddmenu i {
-    border: none;
-    margin: 2px;
-    height: 100%;
-    font-size: 32px;
-    cursor: pointer;
-}
-*/
 #ddmenu {
     padding: 0;
     margin: 0;
     border: 0 none;
-    /*background-color: #666666;*/
     background-color: transparent;
     width: 40px;
     min-width: 40px;
@@ -129,7 +108,6 @@ div.header-fixed-container {
 
 #ddmenu a {
     display: block;
-    /*line-height: 1em;*/
     text-decoration: none;
     background-color: #000000;
     padding: 0 20px;
@@ -142,11 +120,8 @@ div.header-fixed-container {
     list-style: none;
     margin: 0;
     padding: 0;
-    /*position: relative;*/
     position: absolute;
     left: 2px;
-    /*z-index: 597;*/
-    /*z-index: 9997;**************************************************************************************/
 }
 
 #ddmenu>ul {
@@ -172,8 +147,6 @@ div.header-fixed-container {
 #ddmenu ul li:hover {
     position: relative;
     cursor: default;
-    /*z-index: 599;*/
-    /*z-index: 9999;*******************************************************************************/
 }
 
 #ddmenu>ul>li>a {
@@ -224,8 +197,6 @@ div.header-fixed-container {
     max-width: 220px;/**********************************************************/
     margin-top: 0;
     text-transform: capitalize;
-    /*z-index: 598;*/
-    /*z-index: 9998;*************************************************************************************/
 }
 
 #ddmenu ul ul li {
@@ -242,7 +213,7 @@ div.header-fixed-container {
 #ddmenu ul ul a {
     border: 0 none;
     line-height: 100%;
-    padding: 16px 20px;
+    padding: 6px 20px;
     font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
@@ -255,10 +226,12 @@ div.header-fixed-container {
 #ddmenu ul ul li:first-child>a {
     border-top: 1px solid #FFFFFF;
     border-radius: 4px 4px 0 0;
+    padding-top: 16px;
 }
 #ddmenu ul ul li:last-child>a {
     border-bottom: 1px solid #FFFFFF;
     border-radius: 0 0 4px 4px;
+    padding-bottom: 16px;
 }
 
 #ddmenu ul ul li.has-sub>a:after {
@@ -268,7 +241,14 @@ div.header-fixed-container {
     right: 15px;
     margin-top: -8px;
 }
-
+#ddmenu ul ul li:first-child.has-sub>a:after {
+    top: 50%;
+    margin-top: -2px;
+}
+#ddmenu ul ul li:last-child.has-sub>a:after {
+    top: 50%;
+    margin-top: -12px;
+}
 
 
 /* THIRD LEVEL */
