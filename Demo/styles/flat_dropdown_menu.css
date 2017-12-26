@@ -1,27 +1,36 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
 
 #ddmenu {
     padding: 0;
     margin: 0;
-    border: 0;
-    background-color: #333333;
-    border-bottom: 4px solid #1b9bff;
+    border: 0 none;
+    background-color: #666666;
     font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    width: 66px;/*****************************************************************/
+    opacity: 0.75;
 }
 
-#ddmenu ul,
-#ddmenu li {
+#ddmenu a {
+    display: block;
+    line-height: 1em;
+    text-decoration: none;
+    background-color: #000000;
+    padding: 0 20px;
+    color: #FFFFFF;
+}
+
+/* FIRST LEVEL */
+
+#ddmenu ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-#ddmenu ul {
     position: relative;
     z-index: 597;
-    text-transform: uppercase;
 }
 
 #ddmenu>ul {
@@ -39,6 +48,9 @@
     float: left;
     min-height: 1px;
     vertical-align: middle;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 #ddmenu ul li.hover,
 #ddmenu ul li:hover {
@@ -49,20 +61,21 @@
 
 #ddmenu>ul>li>a {
     line-height: 48px;
-}
-
-#ddmenu ul ul li:first-child>a {
-    border-top: 1px solid #0082e7;
+    background-color: transparent;
 }
 
 #ddmenu ul li:hover>a,
 #ddmenu ul li.active>a {
-    background-color: #1b9bff;
-    color: #FFF;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#ddmenu ul li:hover>ul {
+    visibility: visible;
 }
 
 #ddmenu ul li.has-sub>a:after {
-    content: '+';
+    content: '';
     margin-left: 5px;
 }
 
@@ -78,62 +91,49 @@
 
 
 
-
-
-
-
-
-div.menuscroller {
-    height: 400px;
-    max-height: 400px;
-    overflow: scroll;
-}
-
-
-
-
-
-
-
+/* SECOND LEVEL */
 
 #ddmenu ul ul {
     visibility: hidden;
     position: absolute;
     top: 100%;
     left: 0;
+    bottom: 0;
     z-index: 598;
     width: 100%;
-    border-top: 4px solid #1b9bff;
+    border-top: 4px solid transparent;
     text-transform: none;
-    min-width: 190px;
+    min-width: 220px;
+    margin-top: 0;
+    text-transform: capitalize;
 }
 
 #ddmenu ul ul li {
     float: none;
+    position: relative;
 }
 
 #ddmenu ul ul a {
-    background-color: #1b9bff;
-    color: #FFFFFF;
-    border: 1px solid #0082e7;
-    border-top: 0 none;
+    border: 0 none;
     line-height: 150%;
     padding: 16px 20px;
 }
 
 #ddmenu ul ul li:hover>a {
-    background-color: #35a6ff;
+    background-color: #999999;
 }
 
+#ddmenu ul ul li:first-child>a {
+    border-top: 1px solid #FFFFFF;
+    border-radius: 4px 4px 0 0;
+}
 #ddmenu ul ul li:last-child>a {
-    border-radius: 0 0 3px 3px;
-    box-shadow: 0 1px 0 #1b9bff;
+    border-bottom: 1px solid #FFFFFF;
+    border-radius: 0 0 4px 4px;
 }
-#ddmenu ul ul li:last-child:hover>a {
-    border-radius: 0 0 0 3px;
-}
+
 #ddmenu ul ul li.has-sub>a:after {
-    content: '+';
+    content: "\25B6";
     position: absolute;
     top: 50%;
     right: 15px;
@@ -142,38 +142,29 @@ div.menuscroller {
 
 
 
-
+/* THIRD LEVEL */
 
 #ddmenu ul ul ul {
     top: 0;
-    left: auto;
+    left: 102%;
     right: -99.5%;
     border-top: 0 none;
 }
 
-#ddmenu ul li:hover>ul {
-    visibility: visible;
+
+/* FOURTH LEVEL */
+
+#ddmenu ul ul ul ul {
+    top: 0;
+    left: 102%;
+    border-top: 0 none;
 }
 
-#ddmenu ul ul {
-    bottom: 0;
-    left: 0;
-}
 
-#ddmenu ul ul {
-    margin-top: 0;
-}
+/* FIFTH LEVEL */
 
-#ddmenu ul ul li {
-    font-weight: normal;
-    position: relative;
-}
-
-#ddmenu a {
-    display: block;
-    line-height: 1em;
-    text-decoration: none;
-    background-color: #333333;
-    color: #CBCBCB;
-    padding: 0 20px;
+#ddmenu ul ul ul ul ul {
+    top: 0;
+    left: 102%;
+    border-top: 0 none;
 }
