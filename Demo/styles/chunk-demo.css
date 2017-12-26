@@ -157,7 +157,7 @@ header ul li {
     display: block;
     text-align: center;
     transition: all .25s ease-in-out;
-    flex: 1 1 auto; /* flex-grow flex-shrink flex-basis */
+    flex: 0 0 auto; /* flex-grow flex-shrink flex-basis */
     padding: 0 20px;
     margin: 0;
 }
